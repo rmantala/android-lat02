@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:onClick="helloOne"
+        android:text="One"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:onClick="helloTwo"
+        android:text="Two"
+        app:layout_constraintStart_toEndOf="@+id/btOne"
+        app:layout_constraintTop_toBottomOf="@+id/btOne"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="9dp"
+        android:onClick="helloFour"
+        android:text="Four"
+        app:layout_constraintEnd_toEndOf="@+id/btThree"
+        app:layout_constraintTop_toBottomOf="@+id/btTwo"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="51dp"
+        android:onClick="helloThree"
+        android:text="Three"
+        app:layout_constraintBottom_toTopOf="@+id/btFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btOne"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
